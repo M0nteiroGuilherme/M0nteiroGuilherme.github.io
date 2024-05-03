@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+body{
+    background: #000;
+}
+#imgicon {
+    display: flex;
+    margin-left: 24px;
+}
+
+.aaa {
+    background: #560303;
+    height: 10vh;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#button {
+    text-align: center;
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+
+.tab {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabbutton {
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 20px;
+    height: 10vh;
+    color: #74ACAF;
+    background: none;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.menu-primaril nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.tab nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: small;
+    background-color: #000;
+    height: 17vh;
+    letter-spacing: 4px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 46px;
+    color: #74ACAF;
+}
+
+.bnt-final a:hover,
+.menu-primaril a:hover,
+.tab a:hover,
+.label-menu:hover {
+    cursor: pointer;
+    color: #74ACAF;
+    opacity: 0.8;
+}
+
+.IconLocais {
+    height: 21vh;
+    width: 123px;
+}
+
+.containerImgTxt>img,
+p {
+    display: inline-block;
+}
+
+.checkBox {
+    display: none;
+}
+
+.box {
+    transition: .5s;
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    display: none;
+    background-color: #560303;;
+}
+
+
+input[type="checkbox"]:checked+.box {
+    display: block;
+}
+
+.pointerent :hover,
+.tabbutton:hover,
+.nav1 a:hover,
+.X:hover,
+.lerMais:hover {
+    cursor: pointer;
+    color: #74ACAF;
+    opacity: 0.8;
+}
+
+/*estilo mobile*/
+.menuMobile {
+    transition: .5s;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    background-color: #000;
+    height: 100vh;
+    width: 0%;
+    overflow: hidden;
+    position: fixed;
+}
+
+.bntAbri {
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+.menuMobile>nav>ul>li>a {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20pt;
+
+}
+
+.tabbuttonMobile:hover {
+    padding: 20px;
+    background-color: #560303;
+}
+
+.tabbuttonMobile {
+    padding: 20px 4%;
+    text-align: right;
+}
+
+.bntFechar {
+    padding: 8px;
+}
+
+.fundoDesfoc {
+    display: none;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #560303bb;
+}
+
+.menuMobile.menuAberto {
+    width: 70%;
+}
+
+.menuMobile.menuAberto~.fundoDesfoc {
+    display: block;
+}
+
+/*fim do menu*/
+
+
+#Sobre{
+    background-color: #000;
+    padding: 18px;
+    width: 100vw;
+    height: 60vh;
+}
+
+#Sobre >h1, h2 {
+    border-radius: 0px 0px 20px 0px;
+    width: 55vw;
+    background: #560303;
+    color: #74ACAF;
+    text-align: center;
+}
+
+#Sobre >p{
+    font-size: 14pt;
+    padding-top: 5px;
+}
+
+.separacaoTilt{
+    height: 6px;
+    width: 100vw;
+    background-color: #560303;  
+}
+
+#separacao{
+    height: 3px;
+    width: 100vw;
+    background-color: #560303;
+}
+
+
+.rodape {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 10px;
+    font-family: 'IBM Plex Mono';
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #000;
+}
+
+.icon {
+    display: flex;
+    align-items: flex-end;
+    padding: 3px;
+}
+
+.icon>img {
+    width: 45px;
+    height: 45px;
+}
+
+
+
+.rodapeSubDiv,
+.rodapeSubDivSites {
+    padding-top: 10px;
+    margin-left: 42px;
+    text-align: center;
+    grid-column: unset;
+    justify-content: center;
+
+}
+
+.rodapeSubDivSites {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#eclipseIcon {
+    width: 189px;
+    height: 189px;
+    display: flex;
+}
+
+#rodapeText {
+    margin-right: 42px;
+    text-align: start;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.containerImgTxt {
+    display: flex;
+}
+
+
+@media (max-width: 428px) {
+    .menu-primaril {
+        display: none;
+    }
+
+    .menu > a{
+        display: none;
+    }
+    #imgicon {
+        height: 68px;
+        width: 70px;
+    }
+    .logo {
+        font-size: 24pt;
+    }
+}

@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+html,
+body {
+    background-color: #560303;
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#imgicon {
+    display: flex;
+    margin-left: 24px;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: small;
+    background: #000;
+    height: 17vh;
+    letter-spacing: 4px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 46px;
+    color: #74ACAF;
+}
+
+.menu-primaril nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+#register:hover,
+.register:hover,
+.nav1 a:hover,
+.menu-primaril a:hover,
+.bnt-login:hover,
+.login:hover,
+#login:hover,
+.bnt-register:hover {
+    cursor: pointer;
+    color: #74ACAF;
+    opacity: 0.8;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    text-align: center;
+    margin-left: 24px;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login>h1 {
+    color: #fff;
+}
+
+#ordem {
+    color: #74ACAF;
+
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 35px;
+    background: #000;
+    border-radius: 20px;
+}
+
+.card-login {
+    background-color: #560303;
+    color: #74ACAF;
+    font-size: 800;
+    margin: 0;
+}
+
+.textfild {
+    margin: 7px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.textfild>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #000;
+    color: #ffffff;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfild>label {
+    margin-bottom: 6px;
+    color: #ffffff;
+}
+
+.textfild>input::placeholder {
+    color: #ffffff;
+}
+
+.button {
+    border-radius: 4px;
+    display: flex;
+    border: none;
+
+}
+
+.register,
+.bnt-login {
+    width: 80px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #74ACAF;
+    border: none;
+    border-radius: 4px;
+    margin-right: 12px;
+    outline: none;
+}
+
+.ou {
+    margin-right: 12px;
+}
+
+#register {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.main-register {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-register {
+    text-align: center;
+    margin-left: 24px;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-register>h1 {
+    color: #ffffff;
+}
+
+#ordem {
+    color: #74ACAF;
+}
+
+.menu-register {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-register {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 35px;
+    background: #000;
+    border-radius: 20px;
+
+}
+
+.card-register {
+    background-color: #560303;
+    color: #74ACAF;
+    font-size: 800;
+    margin: 0;
+}
+
+.textfild2 {
+    margin: 7px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.textfild2>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #000;
+    color: #ffffff;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfild2>label {
+    margin: 6px;
+    color: #ffffff;
+}
+
+.textfild2>input::placeholder {
+    color: #ffffff;
+}
+
+.login,
+.bnt-register {
+    width: 80px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #74ACAF;
+    border: none;
+    border-radius: none;
+    border-radius: 4px;
+    margin: 12px;
+    outline: none;
+}
+
+.ou {
+    margin-right: 12px;
+}
+
+#login {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.Descricao {
+    color: #560303;
+}
+
+.rodape {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 10px;
+    font-family: 'IBM Plex Mono';
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #000;
+}
+
+.icon {
+    display: flex;
+    align-items: flex-end;
+    padding: 3px;
+}
+
+.icon>img {
+    width: 45px;
+    height: 45px;
+}
+
+.separacao{
+    background-color: #560303;
+    width: 100vw;
+    height: 3px;
+}
+
+.rodapeSubDiv,
+.rodapeSubDivSites {
+    padding-top: 10px;
+    margin-left: 32px;
+    text-align: center;
+    grid-column: unset;
+    justify-content: center;
+
+}
+
+.rodapeSubDivSites {
+    margin-top: 20px;
+}
+
+#eclipseIcon {
+    width: 189px;
+    height: 189px;
+    display: flex;
+}
