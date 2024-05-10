@@ -21,6 +21,8 @@ body {
 }
 
 #imgicon {
+    width: 8vw;
+    height: 17vh;
     display: flex;
     margin-left: 24px;
 }
