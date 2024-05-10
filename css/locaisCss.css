@@ -25,6 +25,8 @@ body {
 }
 
 #imgicon {
+    width: 8vw;
+    height: 17vh;
     display: flex;
     margin-left: 24px;
 }
@@ -241,7 +243,7 @@ li {
     border-radius: 5px;
     padding: 14px;
     margin: 20px;
-    height: 32vh;;
+    height: 40vh;
     width: 25vw;
 }
 
