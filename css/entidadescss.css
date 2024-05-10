@@ -36,6 +36,8 @@ body {
 }
 
 #imgicon {
+    width: 8vw;
+    height: 17vh;
     display: flex;
     margin-left: 24px;
 }
@@ -113,6 +115,8 @@ body {
 }
 
 .bntAbri {
+    top: 4px;
+    left: 12vw;
     position: relative;
 }
 
