@@ -26,6 +26,8 @@ body {
 }
 
 #imgicon {
+    width: 8vw;
+    height: 17vh;
     display: flex;
     margin-left: 24px;
 }
@@ -317,6 +319,60 @@ p {
     display: inline-block;
 }
 
+/*-----------------------noividades-----------------------*/
+.divNovidade{
+    margin-top: 30px;
+}
+
+#novidades {
+    margin-left: 33vw;
+    text-align: center;
+    width: 30vw;
+    background-color: #560303;
+}
+
+#separacao1{
+    width: 100vw;
+    height: 2vh;
+    background-color: #560303;
+}
+
+.cardLeft{
+    display: inline-block;
+    margin: 20px;
+    height: 60vh;
+    width: 46vw;
+    border: solid 3px #560303;
+    border-radius: 0px 0px 15px;
+}
+.cardRight{
+    display: inline-block;
+    margin: 20px;
+    height: 60vh;
+    width: 46vw;
+    border: solid 3px #560303;
+    border-radius: 0px 0px 15px;
+}
+.cardRight > p, .cardLeft >p{ 
+word-wrap: break-word
+}
+
+.titleCard{
+    text-align: center;
+}
+
+.divCard{
+    display: flex;
+}
+
+/*-----------------------noividades-----------------------*/
+#separacao{
+    margin-top: 14px;
+    background-color: #560303;
+    width: 100vw;
+    height: 10px;
+}
+
 @media (max-width:1800px) {
     
     #imgAvisoEsquerdo, .imgAviso {
@@ -328,20 +384,16 @@ p {
     }     
 }
 
-#separacao{
-    margin-top: 14px;
-    background-color: #560303;
-    width: 100vw;
-    height: 10px;
-}
-
-
 @media (max-width: 884px) {
     .ContMobile {
         display: flex;
     }
 
+    #imgAvisoEsquerdo, .imgAviso {
+        margin-left: 20px;    
+    }
     .imgAviso {
+        margin-left: 20px;
         margin-top: 10px;
         width: 93%;
         height: 17vh;
@@ -359,7 +411,10 @@ p {
     #videoPrincipal {
         height: 56vh;
     }
-  
+    #imgicon {
+        width: 20vw;
+        height: 17vh;
+    }
 }
 
 @media (max-width: 834px) {
@@ -369,6 +424,10 @@ p {
     }
     #videoPrincipal {
         height: 60vh;
+    }
+    #imgicon {
+        width: 23vw;
+        height: 17vh;
     }
 }
 
@@ -438,6 +497,15 @@ p {
     .entiImgTab {
         height: 13vh;
         width: 24vw;
+    }
+
+    #imgicon {
+        width: 24vw;
+        height: 17vh;
+    }
+    #novidades {
+        margin-left: 26vw;
+        width: 49vw;
     }
 }
 
@@ -548,6 +616,10 @@ p {
         height: 24vw;
         width: 13vh;
     }
+    #imgicon {
+        width: 24vw;
+        height: 14vh;
+    }
 }
 
 @media (max-width: 393px) {
@@ -558,6 +630,10 @@ p {
     .mgTab {
         height: 24vw;
         width: 13vh;
+    }
+    #imgicon {
+        width: 24vw;
+        height: 14vh;
     }
 }
 
@@ -629,6 +705,10 @@ p {
         width: 20vw;
         height: 11vh;
     }
+    #novidades {
+        margin-left: 26vw;
+        width: 50vw;
+    }
 }
 
 @media (max-width: 360px) {
@@ -648,5 +728,8 @@ p {
     .enti2 {
         width: 42vw;
     }
-
+    #imgicon {
+        width: 24vw;
+        height: 14vh;
+    }
 }
