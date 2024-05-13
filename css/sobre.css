@@ -198,3 +198,92 @@ li {
 }
 
 /*fim do menu*/
+
+@media (max-width: 834px) {
+
+    .containerImgTxt {
+        display: table;
+    }
+    #imgicon {
+        width: 22vw;
+        height: 13vh;
+    }
+    .menu-primaril{display: none;}
+    .tabbutton{display: none;}
+}
+
+@media (max-width: 834px) {
+
+}
+
+
+@media (max-width:414px) {
+    .logo{
+        font-size: 20pt;
+    }
+    #title > h1 {
+        width: 44vw;
+    }
+    #imgicon {
+        width: 23vw;
+        height: 15vh;
+    }    
+}
+
+
+@media (max-width:393px) {
+    .IconLocais {
+        width: 99px;
+    }
+
+    .menu>a,
+    .menu-primaril {
+        display: none;
+    }
+    .logo{
+        font-size: 29pt;
+    }
+}
+
+@media (max-width:390px){
+    #imgicon {
+        width: 25vw;
+    }
+    .logo {
+        font-size: 19pt;
+    }
+    #title > h1 {
+        width: 65vw;
+    }
+}
+@media (max-width:360px){
+    .logo{
+        font-size: 19pt;
+    }
+    #title > h1 {
+        width: 58vw;
+    }
+    .IconLocais {
+        height: 20vh;
+        width: 112px;
+    }
+    #imgicon {
+        height: 11vh;
+        width: 19vw;
+    }
+}
+
+@media (max-width:320px){
+    .locais-card {
+        height: 80vh;
+    }
+
+    .logo {
+        font-size: 23pt;
+    }
+
+    .IconLocais {
+        width: 95px;
+    }
+
+}   
