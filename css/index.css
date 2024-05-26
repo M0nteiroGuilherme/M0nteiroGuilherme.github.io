@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
-
-
 * {
     margin: 0;
     padding: 0;
@@ -56,6 +54,7 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+
 .tabbutton {
     margin-top: 15px;
     text-align: center;
@@ -101,12 +100,14 @@ body {
 .label-menu:hover,
 .tabbuttonMobile:hover,
 .X:hover,
-.bntAbri:hover{
+.bntAbri:hover {
     cursor: pointer;
     color: #74ACAF;
 }
 
+
 /*estilo mobile*/
+
 .menuMobile {
     transition: .5s;
     right: 0;
@@ -131,7 +132,6 @@ li {
     text-decoration: none;
     font-weight: 300;
     font-size: 20pt;
-
 }
 
 .tabbuttonMobile:hover {
@@ -166,6 +166,7 @@ li {
 .menuMobile.menuAberto~.fundoDesfoc {
     display: block;
 }
+
 
 /*fim do menu*/
 
@@ -260,7 +261,7 @@ p {
 }
 
 .enti>p,
-.enti2 > p {
+.enti2>p {
     text-align: justify;
     word-wrap: break-word;
 }
@@ -294,7 +295,6 @@ p {
     text-align: center;
     grid-column: unset;
     justify-content: center;
-
 }
 
 .rodapeSubDivSites {
@@ -319,8 +319,10 @@ p {
     display: inline-block;
 }
 
+
 /*-----------------------noividades-----------------------*/
-.divNovidade{
+
+.divNovidade {
     margin-top: 30px;
 }
 
@@ -331,42 +333,47 @@ p {
     background-color: #560303;
 }
 
-#separacao1{
+#separacao1 {
     width: 100vw;
     height: 2vh;
     background-color: #560303;
 }
 
-.cardLeft{
+.cardLeft {
     display: inline-block;
     margin: 20px;
     height: 60vh;
     width: 46vw;
     border: solid 3px #560303;
     border-radius: 0px 0px 15px;
-}
-.cardRight{
-    display: inline-block;
-    margin: 20px;
-    height: 60vh;
-    width: 46vw;
-    border: solid 3px #560303;
-    border-radius: 0px 0px 15px;
-}
-.cardRight > p, .cardLeft >p{ 
-word-wrap: break-word
 }
 
-.titleCard{
+.cardRight {
+    display: inline-block;
+    margin: 20px;
+    height: 60vh;
+    width: 46vw;
+    border: solid 3px #560303;
+    border-radius: 0px 0px 15px;
+}
+
+.cardRight>p,
+.cardLeft>p {
+    word-wrap: break-word
+}
+
+.titleCard {
     text-align: center;
 }
 
-.divCard{
+.divCard {
     display: flex;
 }
 
+
 /*-----------------------noividades-----------------------*/
-#separacao{
+
+#separacao {
     margin-top: 14px;
     background-color: #560303;
     width: 100vw;
@@ -374,23 +381,23 @@ word-wrap: break-word
 }
 
 @media (max-width:1800px) {
-    
-    #imgAvisoEsquerdo, .imgAviso {
+    #imgAvisoEsquerdo,
+    .imgAviso {
         margin: 0px;
     }
     .imgAviso {
         width: 23vw;
         margin-left: 28px;
-    }     
+    }
 }
 
 @media (max-width: 884px) {
     .ContMobile {
         display: flex;
     }
-
-    #imgAvisoEsquerdo, .imgAviso {
-        margin-left: 20px;    
+    #imgAvisoEsquerdo,
+    .imgAviso {
+        margin-left: 20px;
     }
     .imgAviso {
         margin-left: 20px;
@@ -398,14 +405,12 @@ word-wrap: break-word
         width: 93%;
         height: 17vh;
     }
-
-    .enti { 
+    .enti {
         margin-top: 10px;
         width: 24vw;
         height: 18vh;
     }
-    .enti2{
-       
+    .enti2 {
         width: 31vw;
     }
     #videoPrincipal {
@@ -438,70 +443,57 @@ word-wrap: break-word
         position: relative;
         display: flex;
     }
-
     .logo {
         font-size: 23pt;
     }
-
     .menulink {
         display: none;
     }
-
     .menu>li {
         display: none;
     }
-
     .ContMobile {
         display: flex;
     }
-
     .enti2 {
         margin: 10px;
         width: 28vw;
         display: block;
     }
-
     .enti {
         margin: 0px;
         display: flow;
         width: 23vw;
         height: 42vh;
     }
-
     .imgAviso {
         margin-top: 10px;
         display: inline-block;
         width: 48vw;
         height: 12vh;
     }
-
     .container2 {
         margin-left: 0px;
         justify-content: space-around;
     }
-
     .entiImg {
         width: 20vw;
         height: 10vh;
     }
-
     #imgAvisoEsquerdo,
     .imgAviso {
         margin-left: 2px;
     }
-
     #videoPrincipal {
         height: 69vh;
     }
-
     .entiImgTab {
         height: 13vh;
         width: 24vw;
     }
-
     #imgicon {
         width: 24vw;
-        height: 17vh;
+        height: 15vh;
     }
     #novidades {
         margin-left: 26vw;
@@ -513,112 +505,93 @@ word-wrap: break-word
     .menu>li {
         display: none;
     }
-
     .ContMobile {
         display: flex;
     }
-
     .enti2 {
         margin: 10px;
         width: 28vw;
         display: block;
     }
-
     .enti {
         margin: 0px;
         display: flow;
         width: 23vw;
         height: 41vh;
     }
-
     .imgAviso {
         margin-top: 10px;
         display: inline-block;
         width: 48vw;
         height: 12vh;
     }
-
     .container2 {
         margin-left: 0px;
         justify-content: space-around;
     }
-
     .entiImg {
         width: 21vw;
         height: 11vh;
     }
-
     #imgAvisoEsquerdo,
     .imgAviso {
         margin-left: 2px;
     }
-
     #videoPrincipal {
         height: 68vh;
     }
-
     .entiImgTab {
         height: 13vh;
         width: 24vw;
     }
-
 }
 
 @media (max-width: 412px) {
     .menu>li {
         display: none;
     }
-
     .ContMobile {
         display: flex;
     }
-
     .enti2 {
         margin: 10px;
         width: 28vw;
         display: block;
     }
-
     .enti {
         margin: 0px;
         width: 22vw;
         display: flow;
         height: 40vh;
     }
-
     .imgAviso {
         margin-top: 10px;
         display: inline-block;
         width: 48vw;
         height: 12vh;
     }
-
     .container2 {
         margin-left: 0px;
         justify-content: space-around;
     }
-
     .entiImg {
         width: 20vw;
         height: 10vh;
     }
-
     #imgAvisoEsquerdo,
     .imgAviso {
         margin-left: 2px;
     }
-
     #videoPrincipal {
         height: 64vh;
     }
-
     .entiImgTab {
         height: 24vw;
         width: 13vh;
     }
     #imgicon {
         width: 24vw;
-        height: 14vh;
+        height: 13vh;
     }
 }
 
@@ -626,14 +599,13 @@ word-wrap: break-word
     #videoPrincipal {
         height: 69vh;
     }
-
     .mgTab {
         height: 24vw;
         width: 13vh;
     }
     #imgicon {
         width: 24vw;
-        height: 14vh;
+        height: 13vh;
     }
 }
 
@@ -641,50 +613,41 @@ word-wrap: break-word
     .menu>li {
         display: none;
     }
-
     .ContMobile {
         display: flex;
     }
-
     .enti2 {
         margin: 10px;
         width: 28vw;
         display: block;
     }
-
     .enti {
         margin: 0px;
         display: flow;
         width: 23vw;
         height: 45vh;
     }
-
     .imgAviso {
         margin-top: 10px;
         display: inline-block;
         width: 48vw;
         height: 12vh;
     }
-
     .container2 {
         margin-left: 0px;
         justify-content: space-around;
     }
-
     .entiImg {
         width: 20vw;
         height: 10vh;
     }
-
     #imgAvisoEsquerdo,
     .imgAviso {
         margin-left: 2px;
     }
-
     #videoPrincipal {
         height: 72vh;
     }
-
     .entiImgTab {
         height: 13vh;
         width: 24vw;
@@ -696,11 +659,9 @@ word-wrap: break-word
         width: 23vw;
         height: 48vh;
     }
-
     #videoPrincipal {
         height: 76vh;
     }
-
     .entiImg {
         width: 20vw;
         height: 11vh;
@@ -716,20 +677,17 @@ word-wrap: break-word
         width: 23vw;
         height: 44vh;
     }
-
     .entiImg {
         width: 21vw;
     }
-
     #videoPrincipal {
         height: 70vh;
     }
-
     .enti2 {
         width: 42vw;
     }
     #imgicon {
         width: 24vw;
-        height: 14vh;
+        height: 13vh;
     }
 }
