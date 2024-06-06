@@ -389,6 +389,8 @@ p {
         width: 23vw;
         margin-left: 28px;
     }
+    #videoPrincipal {
+    width: 42vw;
 }
 
 @media (max-width: 884px) {
