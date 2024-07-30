@@ -380,11 +380,18 @@ p {
     height: 10px;
 }
 
-@media (max-width:1800px) {
-    #imgAvisoEsquerdo,
+
+
+/*----------------------- responsividade -----------------------*/
+
+
+@media (max-width:1920px) {
     .imgAviso {
-        margin: 0px;
+        height: 19vh;
     }
+}
+
+@media (max-width:1880px) {
     .imgAviso {
         width: 23vw;
         margin-left: 28px;
