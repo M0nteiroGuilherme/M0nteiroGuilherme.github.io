@@ -31,7 +31,7 @@ body {
     margin-left: 24px;
 }
 
-#separacao{
+#separacao {
     background-color: #560303;
     height: 3px;
     width: 100vw;
@@ -108,7 +108,7 @@ body {
 .label-menu:hover {
     cursor: pointer;
     color: #74ACAF;
-    }
+}
 
 .IconLocais {
     height: 21vh;
@@ -215,22 +215,22 @@ li {
 /*fim do menu*/
 
 
-#separacaoTilt{
+#separacaoTilt {
     width: 100vw;
     height: 10px;
     background-color: #560303;
 }
 
-#title{
+#title {
     padding: 10px;
-    text-align  : center; 
+    text-align: center;
 }
 
-#title > h1{
+#title>h1 {
     color: #74ACAF;
     width: 30vw;
     background-color: #560303;
-    border-radius: 0px 0px 30px 0px;    
+    border-radius: 0px 0px 30px 0px;
 }
 
 .lerMais {
@@ -238,38 +238,11 @@ li {
     text-decoration: underline;
 }
 
-.locais-card {
-    border: 1px solid #560303;
-    border-radius: 5px;
-    padding: 14px;
-    margin: 20px;
-    height: 40vh;
-    width: 25vw;
-}
-
-.X {
-    width: 38px;
-}
-
-.icontext {
-    display: flex;
-}
-
-.txtLocias {
-    word-wrap: break-word;
-    color: #ffffff;
-}
-
 main {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.Descricao {
-    word-wrap: break-word;
-    text-align: justify;
 }
 
 .rodape {
@@ -327,33 +300,100 @@ main {
     text-align: center;
 }
 
+
+/*---------------------criação de entidade------------------ */
+.cabesarioEnti{
+    justify-content: space-around;
+
+}
+
+
+#imagemField{
+    color: #00000000;
+}
+
+
+#textareaEnti{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    color: #ffffff;
+    background-color: #000;
+    border: none;
+    width: 50vw;
+    height: 50vh;
+    border: #560303 1px solid;
+    border-radius: 0px 0px 20px 0px;
+
+}
+
 .containerImgTxt {
     display: flex;
 }
+
+.suaEnti{
+    padding: 20px;
+    border: #560303 solid;
+    margin: 50px;
+}
+
+#imgEnti{
+    width: 10vw;
+    height: 20vh;
+}
+
+
+.sobreEnti {
+    display: flex;
+}
+
+#EntiNome{
+    height: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 0px 0px 10px 0px;
+}
+
+#textareaEnti {
+    margin-left: 5px;
+    padding: 2px;
+}
+
+
 
 @media (max-width: 834px) {
     .containerImgTxt {
         display: table;
     }
+
     .locais-card {
         height: 57vh;
         width: 38vw;
     }
+
     #imgicon {
         width: 39vw;
         height: 13vh;
     }
-    .menu-primaril{display: none;}
-    .tabbutton{display: none;}
+
+    .menu-primaril {
+        display: none;
+    }
+
+    .tabbutton {
+        display: none;
+    }
 }
+
 @media (max-width:414px) {
-    .logo{
+    .logo {
         font-size: 30pt;
     }
-    #title > h1 {
+
+    #title>h1 {
         width: 44vw;
     }
 }
+
 @media (max-width:393px) {
     .IconLocais {
         width: 99px;
@@ -368,47 +408,59 @@ main {
     .menu-primaril {
         display: none;
     }
-    .logo{
+
+    .logo {
         font-size: 29pt;
     }
 }
-@media (max-width:390px){
+
+@media (max-width:390px) {
     #imgicon {
         width: 29vw;
     }
+
     .logo {
         font-size: 33px;
     }
-    #title > h1 {
+
+    #title>h1 {
         width: 36vw;
     }
 }
-@media (max-width:360px){
-    .logo{
+
+@media (max-width:360px) {
+    .logo {
         font-size: 23pt;
     }
+
     .locais-card {
         height: 60vh;
         width: 38vw;
     }
-    #title > h1 {
+
+    #title>h1 {
         width: 44vw;
     }
+
     .IconLocais {
         height: 20vh;
         width: 112px;
     }
+
     #imgicon {
         width: 24vw;
     }
 }
-@media (max-width:320px){
+
+@media (max-width:320px) {
     .locais-card {
         height: 80vh;
     }
+
     .logo {
         font-size: 23pt;
     }
+
     .IconLocais {
         width: 95px;
     }

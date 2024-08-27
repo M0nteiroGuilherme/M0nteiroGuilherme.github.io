@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'IBM Plex Mono';
 }
 
 body {
     background: #000000;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -86,11 +94,19 @@ body {
 .label-menu:hover,
 .tabbuttonMobile:hover,
 .X:hover,
-.bntAbri:hover {
+.bntAbri:hover,
+.BNTConfigui:hover,
+#bntSalvarAlterações:hover,
+#saveButton:hover {
     cursor: pointer;
     color: #74ACAF;
-}
+}   
 
+.BNTConfigui:hover,
+#bntSalvarAlterações:hover,
+#saveButton:hover{
+    background-color: #74acaf34;
+}
 
 /*estilo mobile*/
 
@@ -173,21 +189,22 @@ li {
     display: flex;
     background: #560303;
     width: 10vw;
-    height: 100vh;
+    height: 103vh;
 }
 
 .divCenter {
     border-radius: 23px 0px 0px 0px;
     left: 10vw;
-    top: -100vh;
-    position: relative;
-    display: flex;
+    top: 159px;
+    position: absolute;
     background: #D9D9D9;
-    height: 100vh;
+    height: 103vh;
     width: 100vw;
 }
 
 .perfilImg {
+    margin-left: 23px;
+    margin-top: -97px;
     border-radius: 100%;
     width: 14vw;
     height: 24vh;
@@ -197,14 +214,12 @@ li {
 .divBanner {
     background-color: #2b0e0e;
     height: 15vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .contentPerfil {
-    margin-top: 1vw;
-    margin-left: -200vh;
+
     display: flex;
-    z-index: 2;
     display: inline-block;
 }
 
@@ -213,17 +228,13 @@ li {
     color: #1000;
 }
 
-.imgUploud {
-    margin: auto;
-    overflow: hidden;
-}
 
-.divPerfilButton {
+.divMinhaConta {
     margin: 20px;
     display: grid;
 }
 
-.divPerfilButton>input {
+.divMinhaConta>input {
     padding: 10px;
 }
 
@@ -240,11 +251,198 @@ li {
 }
 
 .BNTConfigui {
+    cursor: pointer ;
     margin: 10px;
 }
 
 .confiTitle {
-    color: rgb(136, 18, 43);
+    color: #ffffff;
     margin: 3px;
     font-size: 12pt;
+}
+
+.divMinhaConta{ 
+    width: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 0vh;
+    padding: 10px;
+    background: #560303;
+    z-index: -1;
+    flex-direction: column;
+}
+
+.divCenter{
+    position: absolute;
+}
+
+
+#containerConta{
+    display: flex;
+}
+
+#containerPrivacidade{
+    display: flex;  
+}
+
+.divPrivacidade{
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 43vh;
+    padding: 10px;
+    background: #560303;
+    z-index: -1;
+    flex-direction: column; 
+}
+
+.divPrivacidade> label{
+    color: #ffffff;
+
+}
+
+.divPrivacidade > h1{
+    color:#74ACAF;;
+}
+
+.divMinhaConta.divMinhaContaTrue{
+    overflow: visible;
+    width: 400px;
+    z-index: 1; 
+    height: 67vh;
+}
+
+.divPrivacidade.divPrivacidadeTrue{
+    overflow: visible;
+    width: 300px;
+    z-index: 1;
+    height: 50vh;
+}
+
+#saveButton{
+    margin-top: 30px;
+}
+
+#bntSalvarAlterações, #saveButton{
+    border: none;
+    border-radius: 21px;
+    margin-top: 30px;
+    width: 164px;
+}
+
+.bntMudar{
+    border: none;
+    border-radius:0px 0px 10px 0px;
+    align-items: center;
+    width: 20vw;
+}
+
+.labelBnt{
+    margin-top: 5px;
+}
+
+/*----------------------- responsividade -----------------------*/
+@media (max-width:1920px) {
+
+}
+
+@media (max-width:1880px) {
+    
+}
+
+@media (max-width:1280px) {
+    .divCenter {
+        margin-top: 5vh;
+        left: 11vw;
+        height: 105vh;
+        width: 100vw;
+    }
+    .rpgInfos {
+        width: 12vw;
+    }
+    
+}
+
+@media (max-width: 884px) {
+    .divCenter {
+        margin-top: 11vh;
+        left: 17vw;
+        height: 105vh;
+        width: 100vw;
+    }
+    .rpgInfos {
+        width: 17vw;
+    }
+    #imgicon {
+        width: 22vw;
+    }
+    .perfilImg {
+        width: 27vw;
+    }
+}
+
+@media (max-width: 834px) {
+
+}
+
+@media (max-width: 800px) {
+    .perfilImg {
+        height: 19vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .divCenter {
+        margin-top: 10vh;
+    }   
+}
+
+@media (max-width: 600px) {
+
+}
+
+@media (max-width: 428px) {
+    .divCenter {
+        margin-top: 5vh;
+        left: 32vw;
+        height: 105vh;
+        width: 70vw;
+    }
+    .rpgInfos {
+        width: 32vw;
+    }
+    .divMinhaConta>input {
+        width: 55vw;
+    }
+    #sobre {
+        max-width: 50vw;
+    }
+    .divPrivacidade.divPrivacidadeTrue {
+        margin-left: -8vw;
+        width: 58vw;
+    }
+}
+
+@media (max-width: 414px) {
+
+}
+
+@media (max-width: 412px) {
+
+}
+
+@media (max-width: 393px) {
+
+}
+
+@media (max-width: 390px) {
+ 
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 360px) {
+
 }

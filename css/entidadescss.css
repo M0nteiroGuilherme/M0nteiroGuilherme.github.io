@@ -166,22 +166,22 @@ li {
 
 /*fim do menu*/
 
-#separacaoTilt{
+#separacaoTilt {
     width: 100vw;
     height: 10px;
     background-color: #560303;
 }
 
-#title{
+#title {
     padding: 10px;
-    text-align  : center; 
+    text-align: center;
 }
 
-#title > h1{
+#title>h1 {
     color: #74ACAF;
     width: 30vw;
     background-color: #560303;
-    border-radius: 0px 0px 30px 0px;    
+    border-radius: 0px 0px 30px 0px;
 }
 
 .box {
@@ -194,12 +194,13 @@ li {
     overflow: auto;
     display: none;
     background-color: #000000;
-}
+}   
 
 .icontext1 {
     margin-top: 44px;
     padding: 10px;
     width: 250px;
+    height: 250px;
 }
 
 .icontext {
@@ -217,15 +218,15 @@ li {
 
 }
 
-.tituloEnt{
+.tituloEnt {
     padding-left: 52px;
     border-radius: 0px 0px 15px 0px;
     color: #74ACAF;
-    background: #560303;
+    background: #560303;    
     width: 87vw;
 }
 
-input[type="checkbox"]:checked+.box{
+input[type="checkbox"]:checked+.box {
     display: block;
 }
 
@@ -235,6 +236,7 @@ p {
 }
 
 .textEntidade {
+    display: inline-flex;
     margin-left: 2vw;
     margin: 10px;
     width: 86vw;
@@ -349,7 +351,7 @@ main {
     text-align: center;
 }
 
-.separacao{
+.separacao {
     background-color: #560303;
     height: 3px;
     width: 100vw;
@@ -358,144 +360,181 @@ main {
 @media (max-width: 834px) {
     .containerImgTxt {
         display: table;
-    
-    #imgicon {
-        width: 39vw;
-        height: 13vh;
     }
-    .menu-primaril{display: none;}
-    .tabbutton{display: none;}
-}
+        #imgicon {
+            width: 80px;
+            height: 80px;
+        
+        }
 
-@media (max-width: 428px) {
-    .logo{
-        font-size: 16pt;
-    }
+        .menu-primaril {
+            display: none;
+        }
 
-    #imgicon {
-        width: 26vw;
-        height: 16vh;
-    }
-    #title > h1 {
-        width: 51vw;
-    }
-    .tabbutton, .menulink {
-        display: none;
+        .tabbutton {
+            display: none;
+        }
     }
 
-    .entidade-card {
-        margin: 10px;
-    }
-    main{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: flex-start;
-    }
-    #entidade-cardMula{
-        height: 233px;
-        width: 180px;
-        margin: 0;
-    }
-    .entidade-card {
-        height: 42vh;
-        width: 43vw;
-    }
-    .imgCard2{
-        width: 31vw;
-        height: 19vh;
-    }
-    .grandeTitulo{
-        margin: 0;
-        font-size: 15pt;
-    }
-    .bntAbri {
-        top: 3vw;
-    }
-    .tabbutton,.menu-primaril{
-        display: none;
-    }
-    .erro-card {
-        width: 31vw;
-        height: 18vh;
-    }
-    .texterro-card {
-        font-size: 15pt;
-    }
-    .box {
-        width: 99vw;
-        height: 100vh;
-        top: -1px;
-        left: 0px;
-    }
-}
-
-@media (max-width:414px) {
-    .logo{
-        font-size: 20pt;
-    }
-    #title > h1 {
-        width: 44vw;
-    }
-    #imgicon {
-        width: 23vw;
-        height: 15vh;
-    }    
-}
-
-
-@media (max-width:393px) {
-    .IconLocais {
-        width: 99px;
+    @media (max-width: 600px){
+        #imgicon {
+            width: 80px;
+            height: 80px;
+        }
     }
 
-    .menu>a,
-    .menu-primaril {
-        display: none;
-    }
-    .logo{
-        font-size: 29pt;
-    }
-}
+    @media (max-width: 428px) {
+        .logo {
+            font-size: 16pt;
+        }
 
-@media (max-width:390px){
-    #imgicon {
-        width: 25vw;
-    }
-    .logo {
-        font-size: 19pt;
-    }
-    #title > h1 {
-        width: 65vw;
-    }
-}
-@media (max-width:360px){
-    .logo{
-        font-size: 19pt;
-    }
-    #title > h1 {
-        width: 58vw;
-    }
-    .IconLocais {
-        height: 20vh;
-        width: 112px;
-    }
-    #imgicon {
-        height: 11vh;
-        width: 19vw;
-    }
-}
+        #imgicon {
+            width: 26vw;
+            height: 16vh;
+        }
 
-@media (max-width:320px){
-    .locais-card {
-        height: 80vh;
+        #title>h1 {
+            width: 51vw;
+        }
+
+        .tabbutton,
+        .menulink {
+            display: none;
+        }
+
+        .entidade-card {
+            margin: 10px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: flex-start;
+        }
+
+        #entidade-cardMula {
+            height: 233px;
+            width: 180px;
+            margin: 0;
+        }
+
+        .entidade-card {
+            height: 42vh;
+            width: 43vw;
+        }
+
+        .imgCard2 {
+            width: 31vw;
+            height: 19vh;
+        }
+
+        .grandeTitulo {
+            margin: 0;
+            font-size: 15pt;
+        }
+
+        .bntAbri {
+            top: 3vw;
+        }
+
+        .tabbutton,
+        .menu-primaril {
+            display: none;
+        }
+
+        .erro-card {
+            width: 31vw;
+            height: 18vh;
+        }
+
+        .texterro-card {
+            font-size: 15pt;
+        }
+
+        .box {
+            width: 99vw;
+            height: 100vh;
+            top: -1px;
+            left: 0px;
+        }
     }
 
-    .logo {
-        font-size: 23pt;
+    @media (max-width:414px) {
+        .logo {
+            font-size: 20pt;
+        }
+
+        #title>h1 {
+            width: 44vw;
+        }
+
+        #imgicon {
+            width: 23vw;
+            height: 15vh;
+        }
     }
 
-    .IconLocais {
-        width: 95px;
+
+    @media (max-width:393px) {
+        .IconLocais {
+            width: 99px;
+        }
+
+        .menu>a,
+        .menu-primaril {
+            display: none;
+        }
+
+        .logo {
+            font-size: 29pt;
+        }
     }
 
-}
+    @media (max-width:390px) {
+        #imgicon {
+            width: 25vw;
+        }
+
+        .logo {
+            font-size: 19pt;
+        }
+
+        #title>h1 {
+            width: 65vw;
+        }
+    }
+
+    @media (max-width:360px) {
+        .logo {
+            font-size: 19pt;
+        }
+
+        #title>h1 {
+            width: 58vw;
+        }
+
+        .IconLocais {
+            height: 20vh;
+            width: 112px;
+        }
+
+        #imgicon {
+            height: 11vh;
+            width: 19vw;
+        }
+    }
+
+    @media (max-width:320px) {
+        .locais-card {
+            height: 80vh;
+        }
+
+        .logo {
+            font-size: 23pt;
+        }
+
+        .IconLocais {
+            width: 95px;
+        }
+
+    }

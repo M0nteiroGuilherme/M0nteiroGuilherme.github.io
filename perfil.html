@@ -2,17 +2,20 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="shortcut icon" type="imagex/png" href="icon/ECLIPSEIcon.ico">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
     <link rel="stylesheet" href="CSS/perfilCss.css">
     <script src="js/perfilJS.js" defer></script>
+    <script src="js/menu.js" defer></script>
 </head>
 
 <body>
     <hender>
         <div id="nav1" class="nav1">
-            <img id="imgicon" src="icon/ECLIPSE.png" width="80hv "
-                height="80vw">
+            <img id="imgicon" src="icon/ECLIPSE.png" width="80hv " height="80vw">
             <a class="logo" herf="/">E.C.L.I.P.S.E</a>
             <div class="menu-primaril">
                 <nav class="menulink">
@@ -26,36 +29,27 @@
         <div class="tab">
             <nav id="button">
                 <ul class="menu">
-                    <li class="tabbutton"><a
-                            href="relatos.html">Relatos</a></li>
-                    <li class="tabbutton" id="locais"><a
-                            href="locais.html">locais</a></li>
+                    <li class="tabbutton"><a href="relatos.html">Relatos</a></li>
+                    <li class="tabbutton" id="locais"><a href="criar.html">locais</a></li>
                     <li class="tabbutton"><a href="sobre.html">Sobre a
                             E.C.L.I.P.S.E</a></li>
-                    <li class="tabbutton"><a
-                            href="entidades.html">Entidades</a></li>
+                    <li class="tabbutton"><a href="entidades.html">Entidades</a></li>
                 </ul>
             </nav>
             <div class="abriMenu">
-                <img class="bntAbri" id="bntAbri" src="icon/list.png"
-                    height="30px " width="30px">
+                <img class="bntAbri" id="bntAbri" src="icon/list.png" height="30px " width="30px">
             </div>
             <div class="menuMobile" id="menuMobile">
                 <div class="bntFechar">
-                    <img class="X" src="icon/botao-fechar.png"
-                        height="30px " width="30px">
+                    <img class="X" src="icon/botao-fechar.png" height="30px " width="30px">
                 </div>
                 <nav>
                     <ul>
-                        <li class="tabbuttonMobile"><a
-                                href="relatos.html">Relatos</a></li>
-                        <li class="tabbuttonMobile" id="locais"><a
-                                href="locais.html">Locais</a></li>
-                        <li class="tabbuttonMobile"><a
-                                href="sobre.html">Sobre a
+                        <li class="tabbuttonMobile"><a href="relatos.html">Relatos</a></li>
+                        <li class="tabbuttonMobile" id="locais"><a href="criar.html">Locais</a></li>
+                        <li class="tabbuttonMobile"><a href="sobre.html">Sobre a
                                 E.C.L.I.P.S.E</a></li>
-                        <li class="tabbuttonMobile"><a
-                                href="entidades.html">Entidades</a></li>
+                        <li class="tabbuttonMobile"><a href="entidades.html">Entidades</a></li>
                         <li class="tabbuttonMobile"><a href="login.html">
                                 LOGIN</a></li>
                         <li class="tabbuttonMobile"><a href="linktree.html">
@@ -69,27 +63,43 @@
 
     <header class="rpgInfos">
         <h1 class="confiTitle">Configurações</h1>
-        <a class="BNTConfigui" type="button" value="minha conta" id="minha conta">minha conta</a>
+        <a class="BNTConfigui" type="button" value="minha conta" id="minhaConta">minha conta</a>
         <a class="BNTConfigui" type="button" value="Privacidade" id="Privacidade">Privacidade</a>
     </header>
+
     <div class="divCenter">
         <div class="divBanner"></div>
         <div class="contentPerfil">
-            <form>
-                <div class="imgUploud">
-                    <img editPerfil="true" id="imagemPreview" class="perfilImg" src="chat/img/user.png">
-                </div>
-            </form>
-            <div class="divPerfilButton">
+        </div>
+        <div class="imgUploud">
+            <img editPerfil="true" id="imagemPreview" class="perfilImg" src="chat/img/user.png">
+        </div>
+        <div id="containerConta">
+            <div id="divMinhaConta" class="divMinhaConta">
                 <input id="imagemField" type="file">
                 <label for="usuario"> nome do usuário</label>
                 <input id="usuario" type="text" name="usuario" placeholder="Usuário">
                 <label for="sobre">sobre mim</label>
                 <textarea name="sobre" id="sobre">Escreva sobre você meu caro convertido</textarea>
+                <button id="saveButton">Salvar</button>
             </div>
-            <button id="saveButton">Salvar</button>
+            <div id="containerPrivacidade">
+                <div id="divPrivacidade" class="divPrivacidade">
+                    <h1>Alterações da conta</h1>
+        
+                    <label class="labelBnt" for="Email">E-mail</label>
+                    <input name="Email" id="Email" class="bntMudar" type="email" placeholder="E-mail">
+        
+                    <label class="labelBnt" for="Senha">Senha</label>
+                    <input name="Senha" id="Senha" class="bntMudar" type="text" placeholder="senha">
+        
+                    <label class="labelBnt" for="Numero">Numero</label>
+                    <input name="Numero" id="Numero" class="bntMudar" type="tel" placeholder="Numero do celular">
+        
+                    <input id="bntSalvarAlterações" type="button" value="Salvar alterações">
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 </body>
 

@@ -4,47 +4,50 @@
 <head>
     <link rel="shortcut icon" type="imagex/png" href="icon/ECLIPSEIcon.ico">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suporte</title>
-    <link rel="stylesheet" href="css/suporte.css" />
-    <script src="js/suporte.js" defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/locaisCss.css" />
     <script src="js/menu.js" defer></script>
+    <script src="js/creatEnti.js" defer></script>
 </head>
 
 <body>
     <hender>
         <div class="nav1">
             <img id="imgicon" src="icon/ECLIPSE.png" width="80hv " height="80vw">
-            <a class="logo" herf="/">E.C.L.I.P.S.E</a>
+            <a class="logo" href="index.html">E.C.L.I.P.S.E</a>
             <div class="menu-primaril">
-                <nav class="menulink">
-                    <a href="login.html"> LOGIN</a>
-                    <a href="linktree.html"> lINKTREE </a>
+                <nav class="menu-primaril">
+                    <a href="login.html">LOGIN</a>
+                    <a href="linktree.html">lINKTREE</a>
                 </nav>
+
             </div>
         </div>
     </hender>
-    <header class="menu-tab">
+    <header class="aaa" id="menutab">
         <div class="tab">
             <nav id="button">
-                <ul class="menu">
-                    <li class="tabbutton" id="locais"><a href="criar.html">Criar</a></li>
-                    <li class="tabbutton"><a href="sobre.html">Sobre a
-                            E.C.L.I.P.S.E</a></li>
-                    <li class="tabbutton"><a href="entidades.html">Entidades</a></li>
-                </ul>
+                <div class="menu">
+                    <a class="tabbutton" href="relatos.html">
+                        Relatos</a>
+                    <a class="tabbutton" href="entidades.html">
+                        Entidades</a>
+                    <a class="tabbutton" href="sobre.html">Sobre a
+                        E.C.L.I.P.S.E</a>
+                </div>
             </nav>
             <div class="abriMenu">
                 <img class="bntAbri" id="bntAbri" src="icon/list.png" height="30px " width="30px">
             </div>
             <div class="menuMobile" id="menuMobile">
                 <div class="bntFechar">
-                    <img class="X" src="icon/botao-fechar.png" height="30px " width="30px">
+                    <img class="X2" src="icon/botao-fechar.png" height="30px " width="30px">
                 </div>
                 <nav>
                     <ul>
-                        <li class="tabbuttonMobile" id="locais"><a href="criar.html">Criar</a></li>
+                        <li class="tabbuttonMobile"><a href="relatos.html">Relatos</a></li>
+                        <li class="tabbuttonMobile" id="locais"><a href="index.html">Inicio</a></li>
                         <li class="tabbuttonMobile"><a href="sobre.html">Sobre a
                                 E.C.L.I.P.S.E</a></li>
                         <li class="tabbuttonMobile"><a href="entidades.html">Entidades</a></li>
@@ -52,27 +55,30 @@
                                 LOGIN</a></li>
                         <li class="tabbuttonMobile"><a href="linktree.html">
                                 lINKTREE </a></li>
-
                     </ul>
                 </nav>
             </div>
             <div class="fundoDesfoc" id="fundoDesfoc"></div>
         </div>
     </header>
-    <div id="formularioSuporte">
-        <h1 id="titleFale">Fale conosco</h1>
-        <form action="https://formsubmit.co/suporte.da.eclipse@gmail.com" method="POST" data-form>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" required />
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required />
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" required></textarea>
-            <button type="submit" data-button>Enviar</button>
-        </form>
+    <div id="title">
+        <div id="separacaoTilt"></div>
+        <h1>crie suas entidade</h1>
     </div>
+    <main>
+        <div class="suaEnti">
+            <div class="cabesarioEnti">
+                <label for="EntiNome">nome da entidae</label>
+                <input id="EntiNome" type="text" placeholder="nome da entidae">
+                <input id="imagemField" type="file">
+            </div>
+            <div class="sobreEnti">
+                <img editPerfil="true" id="imgEnti" class="perfilImg" src="icon/3c.webp" alt="">
+                <textarea name="" id="textareaEnti">Faça o relato sobre sua entidade</textarea>
+            </div>
+        </div>
+    </main>
     <div id="separacao"></div>
-
     <div class="rodape">
         <img id="eclipseIcon" src="icon/ECLIPSE.png" alt>
         <div class="rodapeSubDiv">
@@ -81,11 +87,12 @@
         </div>
         <div class="rodapeSubDiv">
             <h1>Sobre nós</h1>
-            <a style=" color: #ffff;">Informaçôes</a>
+            <a>Informaçôes</a>
+
         </div>
         <div class="rodapeSubDiv">
             <h1>Suporte</h1>
-            <a href="suporte.html">contato</a>
+            <a href="suporte.html" style=" color: #ffff;">contato</a>
         </div>
         <div class="rodapeSubDiv">
             <h1>Informaçôes</h1>
@@ -99,12 +106,15 @@
         <div class="rodapeSubDivSites">
             <a class="icon" href="https://www.youtube.com/@ArquivosdeLilith/featured">
                 <img src="icon/youtube.png" alt="Youtube">
+
             </a>
             <a class="icon" href="https://www.instagram.com/arquivos_de_lilith/">
                 <img src="icon/Instagram.webp" alt="Instagram">
+
             </a>
             <a class="icon" href="discord.gg/kMtsEMYTUC">
                 <img src="icon/discord.png" alt="discord">
+
             </a>
         </div>
     </div>

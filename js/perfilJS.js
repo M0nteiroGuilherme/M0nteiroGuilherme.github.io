@@ -53,3 +53,20 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('editPerfil', contentPerfil);
     });
 });
+
+let minhaConta = document.getElementById('minhaConta')
+let divMinhaConta = document.getElementById('divMinhaConta')
+
+let Privacidade = document.getElementById('Privacidade')
+let divPrivacidade = document.getElementById('divPrivacidade')
+
+minhaConta.addEventListener('click', ()=> {
+    divMinhaConta.classList.add('divMinhaContaTrue')
+    divPrivacidade.classList.remove('divPrivacidadeTrue')
+})
+
+
+Privacidade.addEventListener('click', ()=> {
+    divPrivacidade.classList.add('divPrivacidadeTrue')
+    divMinhaConta.classList.remove('divMinhaContaTrue')
+})
